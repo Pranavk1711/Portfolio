@@ -1,0 +1,38 @@
+<div class="card shadow text-center" style="max-width: 350px; min-width: 350px; margin-top: 2rem; margin-left: 5.5rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{ Project.name }}</h5>
+        <p class="card-text">{{ Project.summary }}</p>
+        <button class="btn btn-primary" (click)="open(content)">View More</button> <!-- Open modal on click -->
+    </div>
+    <div class="card-footer">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div *ngFor="let tag of Project.tags">
+                <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{ tag }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal template -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">{{ Project.name }}</h5>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>{{ Project.summary }}</p>
+    <p>{{ Project.description }}</p> <!-- Additional project info -->
+    <p><strong>Project Link:</strong> <a [href]="Project.projectLink" target="_blank">{{ Project.projectLink }}</a></p>
+    <div *ngIf="Project.pictures.length > 0">
+      <h6>Images:</h6>
+      <div class="row">
+        <div *ngFor="let picture of Project.pictures" class="col-4">
+          <img [src]="picture" alt="Project Image" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>

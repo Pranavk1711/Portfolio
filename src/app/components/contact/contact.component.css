@@ -1,0 +1,87 @@
+.contact-container {
+    background: linear-gradient(135deg, #4E4B58, #B0AEB3); /* Corrected color */
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    max-width: 600px;
+    margin: 50px auto; /* Center the container */
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.2); /* Lightened background for items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h4 {
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    color: #00cfff; /* Customize link color */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-item {
+        padding: 15px; /* Reduce padding for contact items */
+    }
+
+    .social-icon {
+        width: 25px; /* Adjust icon size */
+        height: 25px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 20px; /* Further adjust padding */
+        margin: 30px auto; /* Adjust margin */
+    }
+
+    .contact-item {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .social-icon {
+        width: 20px; /* Further adjust icon size */
+        height: 20px; /* Further adjust icon size */
+    }
+
+    .contact-details {
+        gap: 15px; /* Reduce gap between items */
+    }
+}

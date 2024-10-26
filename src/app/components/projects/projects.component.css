@@ -1,0 +1,63 @@
+/* General Container Styling */
+.container {
+    padding: 20px; /* General padding */
+}
+
+/* Project Cards Styling */
+.app-project-cards {
+    background-color: #fff; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s; /* Animation effect on hover */
+}
+
+/* Hover Effect on Project Cards */
+.app-project-cards:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) { /* For medium devices (tablets) */
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .app-project-cards {
+        margin: 10px; /* Adjust margin for cards */
+    }
+}
+
+@media (max-width: 768px) { /* For small devices (mobile phones) */
+    .container {
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .row {
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .app-project-cards {
+        margin: 5px; /* Adjust margin for cards */
+    }
+
+    .col-lg-4, .col-md-6 {
+        flex: 0 0 100%; /* Stack columns vertically */
+        max-width: 100%; /* Ensure full width */
+    }
+}
+
+@media (max-width: 576px) { /* For extra small devices */
+    .container {
+        padding: 5px; /* Further adjust padding */
+    }
+
+    .app-project-cards {
+        margin: 5px 0; /* Adjust margin for cards */
+    }
+
+    .col-lg-4, .col-md-6 {
+        flex: 0 0 100%; /* Stack columns vertically */
+        max-width: 100%; /* Ensure full width */
+    }
+}

@@ -1,0 +1,44 @@
+.tag {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: burlywood;
+    color: white;
+}
+
+.btn {
+    background-color: burlywood;
+    border-color: black;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .tag {
+        font-size: 12px; /* Reduce font size on smaller screens */
+        padding: 0 15px; /* Adjust padding */
+        height: 28px; /* Adjust height */
+        line-height: 28px; /* Adjust line height */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Add padding for better touch targets */
+        font-size: 12px; /* Reduce font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tag {
+        font-size: 10px; /* Further reduce font size for very small screens */
+        padding: 0 10px; /* Further adjust padding */
+        height: 26px; /* Further adjust height */
+        line-height: 26px; /* Further adjust line height */
+    }
+
+    .btn {
+        padding: 6px 12px; /* Further adjust padding */
+        font-size: 10px; /* Further reduce font size */
+    }
+}

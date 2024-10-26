@@ -1,0 +1,51 @@
+<div class="container text-center" style="align-items: center;">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+</div>
+
+<div class="resume-tile" (click)="toggleResume()" [class.active]="isActive" style="margin-top: 0%;">
+    <h2>View Resume</h2>
+</div>
+
+<div *ngIf="isActive" class="container2">
+    <h2>Resume Information</h2>
+    <p><strong>Name:</strong> Pranav Kumbhar</p>
+    <p><strong>Address:</strong> Katraj, Pune 411046</p>
+    <p><strong>Email:</strong> pranavkumbhar1711</p>
+    <p><strong>Phone:</strong> 8446559671</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/pranavkumbhar1711" target="_blank">linkedin.com/in/pranavkumbhar1711</a></p>
+
+    <h3>Profile</h3>
+    <p>To secure a challenging role in a reputable organization to enhance my skills and knowledge. Seeking a responsible career opportunity to leverage my training and contribute significantly to the company's success.</p>
+
+    <h3>Education</h3>
+    <p><strong>Masters of Computer Application</strong> | Savitribai Phule Pune University</p>
+    <p>Expertise in programming, web technologies, and database management.</p>
+    <p>• Proficient in operating systems, networks, and algorithms.</p>
+    <p>CGPA: 7.92/10 | Percentage: 74.89%</p>
+    
+    <p><strong>Bachelor's of Computer Application</strong> | Savitribai Phule Pune University</p>
+    <p>• Developed desktop and web applications using Java, C++, and Python.</p>
+    <p>• Managed networks, understood operating systems, and implemented security protocols.</p>
+    <p>CGPA: 8.54/10 | Percentage: 79.54%</p>
+
+    <h3>Projects</h3>
+    <p><strong>MCA Project: Online Genealogy Analysis System</strong> | Nov 2022 - Present</p>
+    <p>• Developed a web-based system for family tree creation and ancestral research using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+    <p>• Collaborated on requirements, design, and development.</p>
+    
+    <p><strong>MCA Project: Innovative Hub App</strong> | Feb 2023</p>
+    <p>• Created an Android app with Java and Firebase for idea sharing, real-time sync, and resource access.</p>
+    <p>• Led development with a focus on user experience and collaboration features.</p>
+
+    <h3>Skills</h3>
+    <p>Java, Python, Android, SQL, JavaScript</p>
+
+    <h3>Interests</h3>
+    <p>Sculpturing, Cooking, Idol Painting</p>
+
+    <h3>Certifications</h3>
+    <p>• Android Development, GL</p>
+    <p>• Artificial Intelligence</p>
+    <p>• Cloud Computing, NPTEL</p>
+    <p>• R Programming, IIT Bombay</p>
+</div>

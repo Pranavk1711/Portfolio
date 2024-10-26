@@ -1,0 +1,125 @@
+.container {
+    margin: 20px;
+    text-align: center;
+    margin-left: 6rem;
+    ;
+}
+
+.resume-tile {
+    background-color: #007bff; /* Tile color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px auto;
+    max-width: 250px; /* Set a maximum width for the tile */
+    transition: background-color 0.3s; /* Smooth transition */
+    /* margin-bottom: 20rem; */
+}
+
+.resume-tile:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.resume-tile.active {
+    background-color: #0056b3; /* Darker shade when active */
+}
+
+.container2 {
+    margin: 20px auto; /* Center container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    max-width: 800px; /* Set a maximum width for the container */
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px; /* Main heading size */
+    color: #333; /* Heading color */
+    text-align: center; /* Center align main heading */
+}
+
+h3 {
+    margin-top: 20px; /* Space above section headings */
+    margin-bottom: 10px; /* Space below section headings */
+    font-size: 24px; /* Subheading size */
+    color: #007bff; /* Different color for subheadings */
+    border-bottom: 1px solid #ccc; /* Underline effect for subheadings */
+    padding-bottom: 5px; /* Padding for spacing */
+    text-align: left; /* Center align subheadings */
+}
+
+p {
+    font-size: 16px; /* Paragraph size */
+    color: #555; /* Text color */
+    line-height: 1.6; /* Increased spacing between lines */
+    margin: 5px 0; /* Space between paragraphs */
+    text-align: left; /* Center align paragraphs */
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 2rem; /* Reduce left margin */
+    }
+
+    .resume-tile {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+
+    .container2 {
+        padding: 15px; /* Reduce padding */
+        margin: 15px auto; /* Adjust margin */
+        max-width: 95%; /* Allow more width on smaller screens */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    h3 {
+        font-size: 20px; /* Smaller font size for subheadings */
+    }
+
+    p {
+        font-size: 14px; /* Smaller font size for paragraphs */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-left: 1rem; /* Further reduce left margin */
+    }
+
+    .resume-tile {
+        max-width: 95%; /* Allow full width on very small screens */
+    }
+
+    .container2 {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    h2 {
+        font-size: 20px; /* Further decrease heading size */
+    }
+
+    h3 {
+        font-size: 18px; /* Further decrease subheading size */
+    }
+
+    p {
+        font-size: 12px; /* Further decrease paragraph size */
+    }
+}
